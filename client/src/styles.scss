@@ -14,6 +14,7 @@ body,
   font-family: "Montserrat", sans-serif;
   text-align: center;
   display: flex;
+  overflow-y:hidden;
 
   svg {
     height: 100%;
@@ -23,16 +24,30 @@ body,
 .spacer {
   height: 100%;
 }
-
+.bubble-title{
+  text-align: center;
+  width:100%;
+  display:flex; 
+  justify-content: center;
+  width:100%;
+}
 .bubble-wrap {
   margin: 0 auto;
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
-
+.bubble-container{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width:100%;
+}
 .colors-wrap {
   height: 100%;
-  width: 300px;
+  width: 400px;
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
 
   ul {
@@ -61,7 +76,7 @@ body,
 }
 
 form {
-  margin-top: 60px;
+  margin-top: 20px;
   display: flex;
   flex-direction: column;
 
@@ -95,5 +110,33 @@ form {
     color: white;
     padding: 3px 8px;
     margin-top: 16px;
+  }
+}
+
+//login styles
+.loginWrapper{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width:100%;
+  form{
+    width:25%;
+    input{
+      width:100%;
+    }
+    button{
+      margin-top:25px;
+      padding: 2%;
+      border: 0;
+      border-radius: 15px;
+      background: #333;
+      color:white;
+    }
+    input{
+      border:0;
+      border-bottom: solid 2px #333;
+      margin:25px 0;
+    }
   }
 }
